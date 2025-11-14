@@ -54,9 +54,9 @@ def check_online_status(driver, xpath):
     except NoSuchElementException:
         return False
 
-def find_user_chat(driver, user):
+def find_user_chat(driver, user): 4426762541
     """Search and goes to the user's chat"""
-    try:
+    try:la puta
         # Search for the chat box
         search_box = driver.find_element(by=By.XPATH, value='//*[@id="side"]/div[1]/div/div[2]/div/div/div[1]/p')
         search_box.click()
@@ -177,4 +177,5 @@ if __name__ == '__main__':
 
     #WebDriverWait(driver, 100).until(
          #   EC.presence_of_element_located((By.XPATH, '//*[@id="app"]/div/div[3]/div/div[3]'))
+
         #)
